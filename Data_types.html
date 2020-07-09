@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link rel="stylesheet" type="text/css" href="j.css">
+ <head>
+	    <title>Learn Data Types</title>
+</head>
+<body>
+        <img src="Capture1.PNG" style="margin-left:180px;"><br><br>
+        <div class="topnav">
+<a href="project.html">HOME</a>
+<a href="loginpage1.html">LOGIN</a>
+<a href="signuppage.html">SIGNUP</a>
+<a href="subsel.html">START LEARNING</a>
+<a href="subsel2.html">QUICK QUIZ</a>
+<a href="news_window.html">NEWS</a>
+<a href="aboutus.html">ABOUT US</a>
+<a href="contact.html">CONTACT US</a>
+        </div><br><br>
+  <article> 
+	<video class="video" controls autoplay>
+		<source src="Data_types.mp4" type="video/mp4" >	
+	</video>
+    
+	<h1>Learn Data Types &#169;</h1>
+	<fade>1,234,567,889 views </fade>
+	<a href="https://goo.gl/Ab4jqF" target="_blank">
+  			<button class="button" type="button" >Subscribe Us</button>
+	</a><br>
+<pre id="content_1">
+       <h2 class="headings">Data Types:</h2>
+        <h3><br>Data types in c refer to an extensive system used for declaring variables or functions of different types.
+        The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.<br>
+        <u> Data types in C can be classified as follows :</u>	
+        1.Basic Types
+
+        They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types.
+        2.Enumerated types
+
+        They are again arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program.
+        
+        3.The type void
+
+        The type specifier void indicates that no value is available.
+        
+        4.Derived types
+
+        They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types.
+
+        The array types and structure types are referred collectively as the aggregate types. The type of a function specifies the type of the         function's return value. We will see the basic types in the following section, where as other types will be covered in the <upcom></upcom>ing chapters.
+       </h3> 
+       <table>
+           <tr>
+               <th>Type</th>
+               <th>Storage size</th>
+               <th>Value range</th>
+           </tr>
+           <tr>
+               <td>char</td>
+               <td>1 byte</td>
+               <td>-128 to 127</td>
+           </tr>
+           <tr>
+               <td>signed char</td>
+               <td>1 byte</td>
+               <td>-128 to 127</td>
+           </tr>
+           <tr>
+               <td>Int</td>
+               <td>2 or 4 bytes</td>
+               <td>-32,768 to 32,767</td>
+           </tr>
+           <tr>
+               <td>long</td>
+               <td>4 bytes</td>
+               <td>-2,147,483,648 to 2,147,483,647</td>
+           </tr>
+           
+       </table>   
+</pre>		
+    <h2 class="headings" >Practise Time</h2>
+<pre id=content_2>
+<h3>1)Predict output of following program
+
+        int main()
+        {
+            int i;
+            int arr[5] = {1};
+            for (i = 0; i < 5; i++)
+             printf("%d ", arr[i]);
+            return 0;
+        }
+      <input type="radio" name="answer1" >followed by four garbage values
+      <input type="radio" name="answer1" >1 0 0 0 0
+      <input type="radio" name="answer1" >1 1 1 1 1
+      <input type="radio" name="answer1" >0 0 0 0 0
+      
+       2)int main()
+        {
+            int a[][] = {{1,2},{3,4}};
+            int i, j;
+            for (i = 0; i < 2; i++)
+                for (j = 0; j < 2; j++)
+                    printf("%d ", a[i][j]);
+            return 0;
+        }
+     <input type="radio" name="answer2" >1 2 3 4
+     <input type="radio" name="answer2" >Compiler Error in line ” int a[][] = {{1,2},{3,4}};”
+     <input type="radio" name="answer2" >4 garbage values
+     <input type="radio" name="answer2" >4 3 2 1
+     
+     3)An array elements are always stored in ________ memory locations.
+     <input type="radio" name="answer3" >Sequential
+     <input type="radio" name="answer3" >Random
+     <input type="radio" name="answer3" > Sequential and Random
+     <input type="radio" name="answer3" > None of the above    
+     
+     4)In C Programming, If we need to store word “INDIA” then syntax is as below –
+         char name[];
+        name = “INDIA”
+      <input type="radio" name="answer4" >char name[6] = {'I','N','D','I','A'};
+      <input type="radio" name="answer4" >char name[6] = {'I','N','D','I','A','\0'}
+      <input type="radio" name="answer4" >char name[6] = {"I","N","D","I","A"}
+      <input type="radio" name="answer4" >name = "INDIA"
+
+   5)What is right way to Initialize array?
+       <input type="radio" name="answer5" > int num[6] = { 21, 41, 2, 15, 4, 5 };
+      <input type="radio" name="answer5" > int n{} = { 21, 41, 2, 15, 4, 5 };
+      <input type="radio" name="answer5" > int n{6} = { 21, 41, 2 };
+      <input type="radio" name="answer5" > int n(6) = { 21, 41, 2, 15, 4, 5 };</h3>
+    </pre>
+       <div>
+        <h1 class="feedback" >Feedback</h1>
+        <h1 class="feedback">About Us</h1>
+        <a class="report" href="aboutus.html" style="color:greenyellow">Click here to REPORT ERROR</a>
+      </div>
+    <br><br><br>
+    
+   </article>
+</body>
+</html>
+
+
+

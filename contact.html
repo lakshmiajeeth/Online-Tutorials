@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="project.css">
+<link rel="stylesheet" type="text/css" href="j.css">
+<head>
+<style>    
+body {font-family: Arial, sans-serif,sans-serif;
+   }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:limegreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 50px;
+    padding: 100px;
+}
+</style>
+</head>
+<body>
+<br><br>
+<img src="Capture1.PNG" style="margin-left:180px;">
+<div class="topnav">
+<a href="project.html">HOME</a>
+<a href="loginpage1.html">LOGIN</a>
+<a href="signuppage.html">SIGNUP</a>
+<a href="subsel.html">START LEARNING</a>
+<a href="subsel2.html">QUICK QUIZ</a>
+<a href="news_window.html">NEWS</a>
+<a href="aboutus.html">ABOUT US</a>
+<a href="contact.html">CONTACT US</a>
+</div>
+
+<h3 style="text-align:center; font-size: 30px" >Contact Form</h3>
+<div class="media">
+          <input type="button" class="fb" value="Login with Facebook">
+        
+       
+          <input type="button" class="t" value="Login with Twitter">
+      
+
+          <input type="button" class="g" value="Login with Google+">
+    </div> 
+
+<div class="container">
+  <form ame="myform" method="POST" onsubmit="return validate()">
+    <label for="fname">First Name*</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name*</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="email">E-mail*</label>
+    <input type="text" id="email" name="email" placeholder="Email..">
+    
+
+    <label for="subject">Message*</label>
+    <textarea id="subject" name="subject" placeholder="Enter Your Message here.." style="height:200px"></textarea>
+
+    <input type="submit" name="submit" value="Submit" onclick="vadidate()">
+  </form>
+       <br>
+       
+     
+   <pre style="font-size:140%;color:darkblue;font-family: serif;padding-top: 30px"><b>
+Lovely Faculty of Distance Education,
+Lovely Professional University,
+Jalandhar - Delhi G.T. Road, Phagwara, Punjab (India), 144411.
+For General/ Admission Related Enquiry: Phone: +91-1824-300360 (General Enquiry)
+Toll Free: 1800 3001 1800 (Admission Enquiry). Fax: +91-1824-506111</b>
+</pre>
+</div>
+ 
+
+<script>
+    function validate(){
+        var x = document.forms["myForm"]["name"].value;
+        var y = document.forms["myForm"]["email"].value;
+        var z = document.forms["myForm"]["phone"].value;
+        var u = document.forms["myForm"]["message"].value;
+    if (x == "" || y=="" || z=""|| u="") {
+        alert("All rows must be filled out");
+        return false;
+    }
+    else{
+        window.open("loginpage1.html");
+    }}
+</script>
+</body>
+</html>
